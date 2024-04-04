@@ -1,0 +1,12 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Модульна контрольна робота №1. Виконав студент групи КН-32 Буяло Назар. Варіант 12
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <app-circle-input (shapeData)="onShapeData($event)"></app-circle-input>
+  <div *ngFor="let result of results">{{ result }}</div>
+</ion-content>

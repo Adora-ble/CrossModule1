@@ -1,0 +1,31 @@
+
+<form [formGroup]="circleForm" (ngSubmit)="submitForm()">
+    <div>
+      <label for="radius">Radius:</label>
+      <input id="radius" type="number" formControlName="radius">
+    </div>
+    <div>
+      <label for="innerRadius">Inner Radius (for Ring, optional):</label>
+      <input id="innerRadius" type="number" formControlName="innerRadius">
+    </div>
+    <div>
+      <label for="centerX">Center X:</label>
+      <input id="centerX" type="number" formControlName="centerX">
+    </div>
+    <div>
+      <label for="centerY">Center Y:</label>
+      <input id="centerY" type="number" formControlName="centerY">
+    </div>
+    <div>
+      <label for="pointX">Point X (for checking):</label>
+      <input id="pointX" type="number" formControlName="pointX">
+    </div>
+    <div>
+      <label for="pointY">Point Y (for checking):</label>
+      <input id="pointY" type="number" formControlName="pointY">
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  
